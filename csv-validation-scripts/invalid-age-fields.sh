@@ -31,5 +31,11 @@ else
     grep -vE ',[1-9][0-9],[^,]*$' "$filename" >> "$saveto"
 fi
 
+# Deduplicate and sort the file while preserving the header
+temp_file=$(mktemp)
+head -n 1 "$saveto" > "$temp_file"                  # Copy header
+tail -n +2 "$saveto" | sort | uniq >> "$temp_file"  # Sort and deduplicate rows
+mv "$temp_file" "$saveto"                          # Replace with cleaned file
+
 echo "Invalid age fields are now saved to $saveto."
 
