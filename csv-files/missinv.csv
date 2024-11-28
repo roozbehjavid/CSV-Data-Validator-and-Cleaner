@@ -1,0 +1,9 @@
+Name,Age,Email
+,34,unknown@example.com
+Alice,abc,alice.example.com
+Charlie,,charlie@example.com
+David,35,david@domain
+Eve,,eve@example.com
+Harley Jade,36,invalidemail.com
+Jane Smith,29,
+Mike,,mike@example.com

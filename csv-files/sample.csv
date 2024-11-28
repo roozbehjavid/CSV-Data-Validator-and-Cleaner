@@ -1,0 +1,12 @@
+John Doe,25,john.doe@example.com
+Jane Smith,29,
+Mike,,mike@example.com
+,34,unknown@example.com
+Alice,abc,alice.example.com
+Bob,40,bob@example.com
+Charlie,,charlie@example.com
+Harley Jade,36,invalidemail.com
+Sara,28,sara123@example.net
+Tom,21,tom@example.com
+Eve,,eve@example.com
+David,35,david@domain
